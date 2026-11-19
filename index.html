@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpsCore</title>
+<meta name="description" content="Portal operasional internal: aset dan stok, pengajuan pembelian dengan persetujuan dua tingkat, hak akses per peran, audit log. Open source.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" defer></script></head><body>
+<div class="app">
+<nav class="side" aria-label="Menu utama"><h1>OpsCore</h1>
+<button data-t="pr" aria-current="page">Pengajuan pembelian</button><button data-t="assets">Aset dan QR</button><button data-t="stock">Mutasi stok</button><button data-t="audit">Audit log</button>
+<a href="https://github.com/Arilsaputra854/opscore">Kode sumber</a></nav>
+<div><header class="head"><h2 id="title">Pengajuan pembelian</h2><label for="role">Masuk sebagai</label>
+<select id="role"><option value="staff">Staff (Dewi)</option><option value="manager">Manager (Budi)</option><option value="admin">Admin (Aril)</option></select></header>
+<main><div class="sum" id="sum" aria-label="Ringkasan"></div><div id="msg" role="alert"></div><div id="v"></div></main></div></div>
+<script type="module" src="app.js"></script></body></html>
